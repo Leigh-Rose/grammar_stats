@@ -11,9 +11,9 @@ class GrammarStats
     last_character_punctuation = text[-1] == "." || text[-1] == "!" || text[-1] == "?"
 
     if first_uppercase && last_character_punctuation
-    return true   
+    return @true   
     else
-    return false
+    return @false
   end
   end
 
