@@ -10,7 +10,13 @@ end
 context "if text starts with capital letter and ends with punctuation mark" do
   it "returns true" do
     grammar_stats = GrammarStats.new
-    expect(grammar_stats.check("House!")).to eq true
+    expect(grammar_stats.check("House! House!")).to eq true
+end
+context " if no text supplied" do
+it "returns 0%"do
+  grammar_stats = GrammarStats.new
+  expect(grammar_stats.percentage_good).to eq 0
+end
 end
 end
 end
