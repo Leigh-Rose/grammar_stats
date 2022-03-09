@@ -7,7 +7,7 @@ class GrammarStats
     # text is a string
     # Returns true or false depending on whether the text begins with a capital
     # letter and ends with a sentence-ending punctuation mark.
-    first_uppercase = text.start_with?(/[A-Z]/) 
+    first_uppercase = text.start_with?(/[A-Z]/)
     last_character_punctuation = text[-1] == "." || text[-1] == "!" || text[-1] == "?"
 
     if first_uppercase && last_character_punctuation
